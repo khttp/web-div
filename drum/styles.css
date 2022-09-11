@@ -1,0 +1,50 @@
+.drum {
+    margin: 20px    ;
+    padding: 20px;   
+    display: inline-block;
+    text-align: bottom;
+    width: 3em;
+    height:3em;
+    background-color: white;
+    font-size: 3em;
+
+}
+
+.w {
+    background-image: url("/drum/images/crash.png");
+}
+
+.a {
+    background-image: url('/drum/images/kick.png');
+}
+
+.s {
+    background-image: url('/drum/images/snare.png');
+}
+
+.d {
+    background-image: url('/drum/images/tom1.png');
+}
+
+.j {
+    background-image: url('/drum/images/tom2.png');
+}
+
+.k {
+    background-image: url('/drum/images/tom3.png');
+}
+
+.l {
+    background-image: url('/drum/images/tom4.png');
+}
+
+body {
+    background-color: rgb(145, 94, 94);
+    text-align: center;
+}
+
+.pressed{
+    background-color:grey;
+    border:10px;
+    border-color: black;
+}

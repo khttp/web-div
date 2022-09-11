@@ -1,0 +1,39 @@
+.click{
+    opacity:.5;
+}
+body{
+    background-color: rgb(20, 20, 75);
+}
+
+div {
+    font-size:1.8rem;
+    color:wheat;
+    font-family:cursive;
+    text-align:center;
+    margin:3em auto;
+    width:300px;
+    height:100px;
+}
+.blue{
+    background-color:blue;
+    width:300px;
+    height:300px;
+}
+.yellow{
+    background-color:yellow;
+    width:300px;
+    height:300px;
+}
+.red{
+    background-color:red;
+    width:300px;
+    height:300px;
+}
+.green{
+    background-color:green;
+    width:300px;
+    height:300px;
+}
+.game{
+    margin:auto;
+}
