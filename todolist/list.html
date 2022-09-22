@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="styles.css"> 
+        <title>todolist</title>
+    </head>
+    <body>
+       <form action="/" method="post" accept-charset="utf-8">
+
+          <ol>
+              <% for item of <%= listItems %>){%>
+              
+              <li><%= item%></li>
+              <%}%>
+              <li>
+                  <input type="text" placeholder='add item' name="item"> 
+                  <button type="submit">add item</button>
+
+              </li>
+          </ol> 
+       </form> 
+    </body>
+</html>
