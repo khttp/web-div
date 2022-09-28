@@ -1,8 +1,11 @@
 <%- include('partials/header') -%>
     <h1>Home</h1>  
     <p><%= paragraph%></p>
-    <% for(post of comments){%>
+    <% comments.forEach((post)=>{%>
     <h1><%= post.title%></h1>
-    <p><%= post.body%></p>
-    <%}%>
+    <p><%= post.body.substring(0,100)+'.....'%> 
+        <a href='/posts/<%=post.title%>'>read more</a>
+    </p>
+
+    <%})%>
 <%- include('partials/footer') -%>

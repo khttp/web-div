@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+const _ = require('lodash');
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -36,7 +36,21 @@ app.post('/compose',(req,res)=>{
     posts.push(post);
     res.redirect('/')
 })
+app.get('/posts/:postname',(req,res)=>{
+        
+ posts.forEach((comment)=>{
+        
+        if (_.lowerCase(comment.title)=== _.lowerCase(req.params.postname)){
 
+                res.render('post',{header:comment.title,paragraph:comment.body.readmore()}) 
+        }
+ })
+        
+    
+    
+})
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
+
+
