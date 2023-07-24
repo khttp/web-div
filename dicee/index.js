@@ -1,15 +1,3 @@
-function HouseKeeping(name,age,languages) {
-    this.name=name;
-    this.age=this.age;
-    this.languages=this.languages
-    this.clean=function(){
-        alert('clean in progress')
-    }
-    
-}
-person=new HouseKeeping('h',12,['en','ar'])
-
-person.clean()
 function play(){
 var x=Math.floor(Math.random()*6+1)
 var y=Math.floor(Math.random()*6+1)
